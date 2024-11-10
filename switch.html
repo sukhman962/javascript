@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HELLO</h1>
+
+    <script>
+
+        let p=parseFloat(prompt("Enter marks in phy"))
+        let c=parseFloat(prompt("Enter marks in chem"))
+        let m=parseFloat(prompt("Enter marks in maths"))
+        
+        let total=p+c+m
+        let per = (total/300)*100
+        per = Math.floor(per/10)
+        
+       switch (per){
+        case 10:
+        case 9:
+            alert("GRADE A")
+            break;
+        case 8 :
+            alert("GRADE B")
+            break;
+        case 7 :
+            alert("GRADE C")
+        default :
+        alert("GRADE D")
+       }
+    </script>
+</body>
+</html>

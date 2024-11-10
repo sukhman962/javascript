@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marks Input</title>
+</head>
+<body>
+    <button onclick="userDetails()">GR</button>
+    <script>
+       let maths = prompt("Enter your marks in Mathematics:");
+let chemistry = prompt("Enter your marks in Chemistry:");
+let physics = prompt("Enter your marks in Physics:");
+
+maths = parseInt(maths);
+chemistry = parseInt(chemistry);
+physics = parseInt(physics);
+
+let total = maths + chemistry + physics;
+let percentage = (total / 300) * 100;
+
+alert("Total Marks: " + total);
+alert("Percentage: " + percentage.toFixed(2) + "%");
+
+    </script>
+</body>
+</html>
